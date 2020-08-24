@@ -29,7 +29,7 @@ import org.springframework.samples.petclinic.model.Visit;
  *
  * @author Michael Isvy
  */
-public interface ClinicService {
+public ClinicService {
 
     Collection<PetType> findPetTypes();
 
