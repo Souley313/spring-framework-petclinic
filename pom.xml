@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-framework-petclinic</artifactId>
-    <version>5.2.4</version>
+    <version>5.2.4-SNAPSHOT</version>
 
     <name>Spring Framework Petclinic</name>
     <packaging>war</packaging>
@@ -81,6 +81,13 @@
         <docker.image.prefix>springcommunity</docker.image.prefix>
 
     </properties>
+    
+    <distributionManagement>
+		<snapshotRepository>
+		<id>nexus-snapshots</id>
+		<url>http://nexus:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
     <dependencyManagement>
         <dependencies>
